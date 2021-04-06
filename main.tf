@@ -82,6 +82,7 @@ resource "azurerm_kubernetes_cluster" "kubernetes_cluster" {
     node_count          = 1
     vm_size             = "Standard_D2_v2"
     enable_auto_scaling = true
+    max_pods            = 80
     max_count           = 3
     min_count           = 1
   }
